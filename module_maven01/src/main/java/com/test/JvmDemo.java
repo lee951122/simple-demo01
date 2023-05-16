@@ -10,6 +10,7 @@ public class JvmDemo {
         String s = "112358";
         System.out.println("s = " + s);
 
-        System.out.println("hot fix commit 1 !!!");
+        System.out.println("hot fix commit 11111 !!!");
+        System.out.println("hot fix commit 22222 !!!");
     }
 }
