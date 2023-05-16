@@ -9,5 +9,7 @@ public class JvmDemo {
     public static void main(String[] args) {
         String s = "112358";
         System.out.println("s = " + s);
+
+        System.out.println("hot fix commit 1 !!!");
     }
 }
