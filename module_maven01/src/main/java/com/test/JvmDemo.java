@@ -1,5 +1,7 @@
 package com.test;
 
+import sun.misc.Launcher;
+
 /**
  * @author: likai
  * Date: 2023/5/15 0:02
@@ -7,16 +9,12 @@ package com.test;
  */
 public class JvmDemo {
     public static void main(String[] args) {
-        String s = "112358";
-        System.out.println("s = " + s);
+        ClassLoader appClassLoader = Launcher.getLauncher().getClassLoader();
+        ClassLoader extClassLoader = appClassLoader.getParent();
+        ClassLoader bootstrapClassLoader = extClassLoader.getParent();
 
-        System.out.println("master commit conflict !!!");
-
-        System.out.println("hot fix commit 11111 !!!");
-        System.out.println("hot fix commit 22222 !!!");
-
-        System.out.println("hot fix commit conflict !!!");
-        System.out.println("hot fix commit conflict222 !!!");
-        System.out.println("master commit conflict 222 !!!");
+        System.out.println("bootstrapClassLoader = " + bootstrapClassLoader);
+        System.out.println("extClassLoader = " + extClassLoader);
+        System.out.println("appClassLoader = " + appClassLoader);
     }
 }
