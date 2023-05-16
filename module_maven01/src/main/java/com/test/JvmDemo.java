@@ -19,6 +19,7 @@ public class JvmDemo {
         System.out.println("extClassLoader = " + extClassLoader);
         System.out.println("appClassLoader = " + appClassLoader);
 
+        System.out.println("=============== BootstrapClassPath ===============");
         URL[] urLs = Launcher.getBootstrapClassPath().getURLs();
         for (URL urL : urLs) {
             System.out.println(urL);
