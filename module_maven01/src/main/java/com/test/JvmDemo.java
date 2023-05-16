@@ -14,5 +14,6 @@ public class JvmDemo {
         System.out.println("hot fix commit 22222 !!!");
 
         System.out.println("hot fix commit conflict !!!");
+        System.out.println("hot fix commit conflict222 !!!");
     }
 }
